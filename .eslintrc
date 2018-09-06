@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "react-app",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "react",
+    "flowtype",
+    "flowtype-errors"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "react/no-children-prop": 0,
+    "react/jsx-key": 0,
+    "no-unused-expressions": 0,
+    "jsx-a11y/anchor-has-content": 0,
+    "jsx-a11y/heading-has-content": 0,
+    "flowtype/no-types-missing-file-annotation": 0,
+    "flowtype-errors/show-errors": 1,
+    "flowtype-errors/show-warnings": 1
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "presets": [
+    "react",
+    "env",
+    "flow"
+  ],
+  "plugins": [
+    "react-require",
+    ["module-resolver", {
+      "root": ".",
+      "alias": {
+        "~": "./src"
+      }
+    }],
+    "inline-react-svg",
+    "syntax-dynamic-import",
+    "react-loadable/babel",
+    "transform-object-rest-spread",
+    "implicit-return",
+    "babel-plugin-styled-components",
+    "react-hot-loader/babel",
+    "transform-decorators"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-react-jsx-self",
+        "transform-react-jsx-source"
+      ]
+    },
+    "production": {
+      "presets": [
+        "react-optimize"
+      ],
+      "plugins": [
+        "fast-async",
+        "faster.js"
+      ]
+    }
+  }
+}
